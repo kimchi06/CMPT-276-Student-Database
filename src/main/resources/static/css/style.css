@@ -1,0 +1,60 @@
+#home {
+    background-color: rgb(233, 239, 241);
+    border-radius: 20px;
+    height: 80vh;
+    width: 80vw;
+    margin: 10vh auto 0 auto;
+    padding: 10px;
+}
+
+#displayBox {
+    background-color: rgb(233, 239, 241);
+    padding: 5px 10px 10px 20px;
+    border-radius: 20px;
+    height: 80vh;
+    width: 80vw;
+}
+
+.studentBox {
+    background-color: rgb(237, 252, 252);
+    display: block;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#formContainer {
+    background-color: rgb(233, 239, 241);
+    padding: 5px 50px 10px 50px;
+    border-radius: 20px;
+    margin: 20px auto 0 auto;
+    height: 600px;
+    width: 600px;
+}
+
+#tableContainer {
+    background-color: rgb(233, 239, 241);
+    width: 80vw;
+    margin: 50px;
+}
+
+a:link {
+    text-decoration:none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration:none;
+}
+
+/* selected link */
+a:active {
+    text-decoration:none;
+}

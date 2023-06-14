@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify student</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <button class="btn btn-dark" onclick="window.location.href='/index.html'"> Back to homepage </button>
+    <div id="formContainer">
+        <form th:action="@{'/students/modify/{uid}'(uid=${uid})}" th:object="${stu}" method="post">
+            <h2 style="text-align: center;">Modify student</h2>
+
+            <input type="hidden" th:field="*{uid}">
+
+            <label for="nameForm">Name</label>
+            <input id="nameForm" name="nameForm" class="form-control" placeholder="Name" type="text" th:field="*{name}"><br>
+
+            <label for="weightForm">Weight (kg)</label>
+            <input id="weightForm" name="weightForm" class="form-control" placeholder="Weight (kg)" type="number" th:field="*{weight}"><br>
+
+            <label for="heightForm">Height (cm)</label>
+            <input id="heightForm" name="heightForm" class="form-control" placeholder="Height (cm)" type="number" th:field="*{height}"><br>
+
+            <label for="hairForm">Hair color</label>
+            <input id="hairForm" name="hairForm" class="form-control" placeholder="Hair color" type="text" th:field="*{hair}"><br>
+
+            <label for="gpaForm">GPA</label>
+            <input id="gpaForm" name="gpaForm" class="form-control" placeholder="GPA" type="number" step="0.01" min="0.00" max="4.33" th:field="*{gpa}"><br>
+
+            <input class="btn btn-dark" type="submit" value="Submit"></input>
+        </form>
+    </div>
+</body>
+</html>
